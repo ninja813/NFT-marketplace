@@ -1,0 +1,7 @@
+packages:
+  - apps/*
+
+ignoredBuiltDependencies:
+  - keccak
+  - secp256k1
+  - sqlite3
