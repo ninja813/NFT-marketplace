@@ -1,0 +1,47 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "db:migrate": "ts-node src/migrations/run.ts",
+    "db:seed": "ts-node src/migrations/seed.ts",
+    "db:reset": "ts-node src/reset.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^17.2.1",
+    "ethereumjs-util": "^7.1.5",
+    "express": "^5.1.0",
+    "http": "0.0.1-security",
+    "httpreslog": "^1.0.12",
+    "js-sha3": "^0.9.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.2",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "nanoid": "^5.1.5",
+    "socket.io": "^4.8.1",
+    "tweetnacl": "^1.0.3",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
